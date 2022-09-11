@@ -7,7 +7,7 @@ Feature: Rediff Money Portfolio Operations
     When User clicks on Submit button
     Then User verify if login is successful
    
-  @exclude    
+    
   @CreatePortfolio
   Scenario Outline: Create Portfolio
     Given User logged in to Rediff Money Portal
@@ -17,7 +17,7 @@ Feature: Rediff Money Portfolio Operations
     Then User verify if Portfolio is created successfully<PortfolioName>
     Examples: 
       | PortfolioName |  
-      | "Portfolio5"  |     
+      | "Portfolio4"  |     
      
   @exclude
   @RenamePortfolio
@@ -30,10 +30,10 @@ Feature: Rediff Money Portfolio Operations
     Then User verify if Portfolio is renamed successfully from<PortfolioName>to<NewPortfolioName>
     Examples: 
       | PortfolioName | NewPortfolioName|
-      | "Portfolio4"  | "NewPortfolio4"  |       
+      | "Portfolio3"  | "MyPortfolio"  |       
      
      
-  @exclude
+
   @DeletePortfolio
   Scenario Outline: Delete Portfolio
     Given User logged in to Rediff Money Portal
@@ -43,6 +43,6 @@ Feature: Rediff Money Portfolio Operations
     Then User verify if Portfolio is deleted successfully<PortfolioName>
     Examples: 
       | PortfolioName |
-      | "Portfolio3"  | 
+      | "Portfolio4"  | 
     
             

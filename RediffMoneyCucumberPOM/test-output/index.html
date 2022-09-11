@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cucumber_Automation_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Cucumber Automation Suite</span>
+              <span class="suite-name border-failed">Cucumber Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Cucumber_Automation_Suite" class="navigator-link ">
-                    <span>C:\Users\pushk\eclipse-workspace\RediffMoneyCucumberPOM\testNG.xml</span>
+                    <span>C:\Users\pushk\git\repository\MyRepository\RediffMoneyCucumberPOM\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cucumber_Automation_Suite" class="hide-methods failed suite-Cucumber_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Cucumber_Automation_Suite -->
+                      <a href="#" panel-name="suite-Cucumber_Automation_Suite" class="show-methods failed suite-Cucumber_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Cucumber_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Cucumber_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Automation_Suite" title="com.cucumber.pom.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Delete Portfolio&quot;, &quot;Rediff Money Portfolio Operations&quot;)">runScenario("Delete Portfolio", "Rediff Money Portfolio Operations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cucumber_Automation_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,17 @@
                     <div class="method-list-content passed suite-Cucumber_Automation_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Automation_Suite" title="com.cucumber.pom.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Rename Portfolio&quot;, &quot;Rediff Money Portfolio Operations&quot;)">runScenario("Rename Portfolio", "Rediff Money Portfolio Operations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Cucumber_Automation_Suite" title="com.cucumber.pom.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Delete Stock&quot;, &quot;Rediff Money Stock Operations&quot;)">runScenario("Delete Stock", "Rediff Money Stock Operations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Automation_Suite" title="com.cucumber.pom.Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Create Portfolio&quot;, &quot;Rediff Money Portfolio Operations&quot;)">runScenario("Create Portfolio", "Rediff Money Portfolio Operations")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -124,6 +148,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cucumber_Automation_Suite" class="panel Cucumber_Automation_Suite">
+          <div class="suite-Cucumber_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cucumber.pom.Runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Delete Portfolio&quot;, &quot;Rediff Money Portfolio Operations&quot;)">
+                  </a> <!-- runScenario("Delete Portfolio", "Rediff Money Portfolio Operations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Delete Portfolio", "Rediff Money Portfolio Operations")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unable to select Portfolio...timeout: Timed out receiving message from renderer: 40.000
+  (Session info: chrome=105.0.5195.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-MIBHCKO2&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pushk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ac5e12ee0ed17f027003b4c42ed6b06
+	at com.cucumber.pom.Pages.MyPortfolioPage.selectPortfolio(MyPortfolioPage.java:137)
+	at com.cucumber.pom.StepDefinitions.Portfolio.selectPortfolio(Portfolio.java:63)
+	at ✽.User selects portfolio from Portfolio list&quot;Portfolio4&quot;(file:///C:/Users/pushk/git/repository/MyRepository/RediffMoneyCucumberPOM/src/test/resources/Features/Portfolio.feature:40)
+... Removed 1 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cucumber_Automation_Suite-class-failed -->
           <div class="suite-Cucumber_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,10 +186,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Rename Portfolio&quot;, &quot;Rediff Money Portfolio Operations&quot;)">
+                  </a> <!-- runScenario("Rename Portfolio", "Rediff Money Portfolio Operations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Rename Portfolio", "Rediff Money Portfolio Operations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Delete Stock&quot;, &quot;Rediff Money Stock Operations&quot;)">
                   </a> <!-- runScenario("Delete Stock", "Rediff Money Stock Operations") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Delete Stock", "Rediff Money Stock Operations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Create Portfolio&quot;, &quot;Rediff Money Portfolio Operations&quot;)">
+                  </a> <!-- runScenario("Create Portfolio", "Rediff Money Portfolio Operations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Create Portfolio", "Rediff Money Portfolio Operations")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -155,7 +229,7 @@
         </div> <!-- panel Cucumber_Automation_Suite -->
         <div panel-name="test-xml-Cucumber_Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pushk\eclipse-workspace\RediffMoneyCucumberPOM\testNG.xml</span>
+            <span class="header-content">C:\Users\pushk\git\repository\MyRepository\RediffMoneyCucumberPOM\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -215,20 +289,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.cucumber.pom.Runner.TestRunner')
-data.setCell(0, 3, 10651);
+data.setCell(0, 3, 52627);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.cucumber.pom.Runner.TestRunner')
-data.setCell(1, 3, 7837);
+data.setCell(1, 3, 46455);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.cucumber.pom.Runner.TestRunner')
+data.setCell(2, 3, 22154);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.cucumber.pom.Runner.TestRunner')
+data.setCell(3, 3, 9676);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.cucumber.pom.Runner.TestRunner')
+data.setCell(4, 3, 7833);
 window.suiteTableData['Cucumber_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Cucumber_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Cucumber_Automation_Suite">
               </div> <!-- times-div-Cucumber_Automation_Suite -->
             </div> <!-- times-div -->
@@ -256,20 +342,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.cucumber.pom.Runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@741ac284)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@49986178)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("Create Portfolio", "Rediff Money Portfolio Operations")</span>
+                <span class="method-start">370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Rename Portfolio", "Rediff Money Portfolio Operations")</span>
+                <span class="method-start">52997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Delete Portfolio", "Rediff Money Portfolio Operations")</span>
+                <span class="method-start">60832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">runScenario("Add Stock", "Rediff Money Stock Operations")</span>
-                <span class="method-start">392 ms</span>
+                <span class="method-start">107287 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Delete Stock", "Rediff Money Stock Operations")</span>
-                <span class="method-start">11050 ms</span>
+                <span class="method-start">116965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">18889 ms</span>
+                <span class="method-start">139124 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
