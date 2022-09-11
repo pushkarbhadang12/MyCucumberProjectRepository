@@ -19,7 +19,7 @@ Feature: Rediff Money Portfolio Operations
       | PortfolioName |  
       | "Portfolio4"  |     
      
-  @exclude
+  
   @RenamePortfolio
   Scenario Outline: Rename Portfolio
     Given User logged in to Rediff Money Portal
