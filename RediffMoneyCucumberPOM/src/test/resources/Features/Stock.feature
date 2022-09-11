@@ -7,7 +7,7 @@ Feature: Rediff Money Stock Operations
     When User clicks on Submit button
     Then User verify if login is successful
   
-
+  
   @AddStock
   Scenario Outline: Add Stock
     Given User logged in to Rediff Money Portal
