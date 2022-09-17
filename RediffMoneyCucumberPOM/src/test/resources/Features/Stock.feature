@@ -7,7 +7,7 @@ Feature: Rediff Money Stock Operations
     When User clicks on Submit button
     Then User verify if login is successful
   
-  
+  @exclude
   @AddStock
   Scenario Outline: Add Stock
     Given User logged in to Rediff Money Portal
@@ -25,7 +25,7 @@ Feature: Rediff Money Stock Operations
       | StockName      |  StockDate     |  StockQuantity  |    StockPrice   |    Exchange    |
       | "Coforge Ltd"  |  "12-03-2022"  |       "50"      |     "2320"      |     "BSE"      |  
       
-    
+  @exclude  
   @DeleteStock
   Scenario Outline: Delete Stock
     Given User logged in to Rediff Money Portal

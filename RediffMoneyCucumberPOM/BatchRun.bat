@@ -1,2 +1,2 @@
-cd %~dp0\RediffMoneyCucumberPOM\testNG.xml
-mvn compile test
+cd %~dp0\RediffMoneyCucumberPOM
+mvn test

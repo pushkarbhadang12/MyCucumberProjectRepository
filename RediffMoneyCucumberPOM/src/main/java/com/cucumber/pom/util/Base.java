@@ -5,6 +5,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import javax.swing.JOptionPane;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -53,6 +56,8 @@ public class Base {
 	@After
 	public void after() {
 		//base.getDriver().quit();
+		JOptionPane.showMessageDialog(null, "Project execution completed...");
+		
 	}
 	
 	public static ExtentReports setUpExtentReport() {
